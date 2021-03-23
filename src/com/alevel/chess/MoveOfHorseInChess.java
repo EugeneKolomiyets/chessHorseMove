@@ -9,13 +9,32 @@ public class MoveOfHorseInChess {
         horse.CheckPoint(new Point(6, 5));
 
 
- /*   int x=7,y=7,x1=6,y1=5;
+        int x = 7, y = 7, x1 = 6, y1 = 5;
 
-    if ((x-2>=0)&(y-1>=0))
-         if ((x-2==x1)&(y-1==y1))
-            System.out.println("match");
-    else if ((x-2>=0)&(y+1<7))
-             if ((x-2==x1)&(y+1==y1))
-                 System.out.println("match");         */
+        if ((x - 2 == x1) & (y - 1 == y1)) {
+            if ((x - 2 >= 0) & (y - 1 >= 0))
+                System.out.println("match");
+        } else if ((x - 2 == x1) & (y + 1 == y1)) {
+            if((x - 2 >= 0) & (y + 1 <= 7))
+                System.out.println("match");
+        }else if ((x + 2 == x1) & (y - 1 == y1)) {
+            if ((x + 2 <= 7) & (y - 1 >= 0))
+                System.out.println("match");
+        }else if ((x + 2 == x1) & (y + 1 == y1)) {
+            if ((x + 2 <= 7) & (y + 1 <= 7))
+                System.out.println("match");
+        }else if ((x + 1 == x1) & (y - 2 == y1)) {
+            if ((x + 1 <= 7) & (y - 2 >= 0))
+                System.out.println("match");
+        }else if ((x + 1 == x1) & (y + 2 == y1)) {
+            if ((x + 1 <= 7) & (y + 2 <= 7))
+                System.out.println("match");
+        }else if ((x - 1 == x1) & (y - 2 == y1)) {
+            if ((x - 1 >= 0) & (y -2 >= 0))
+                System.out.println("match");
+        }else if ((x - 1 == x1) & (y + 2 == y1)) {
+            if ((x - 1 >= 0) & (y + 2 <= 7))
+                System.out.println("match");
+        }
     }
 }
