@@ -16,21 +16,21 @@ public class Horse {
     }
     public void MakeAllPossibleMoves(){
         step = new Point(point);
-        move((step.Up()&step.Up()&step.Up()&step.Left()));
+        move((step.Up()&step.Up()&step.Left()));
         step = new Point(point);
-        move((step.Up()&step.Up()&step.Up()&step.Right()));
+        move((step.Up()&step.Up()&step.Right()));
         step = new Point(point);
-        move((step.Down()&step.Down()&step.Down()&step.Left()));
+        move((step.Down()&step.Down()&step.Left()));
         step = new Point(point);
-        move((step.Down()&step.Down()&step.Down()&step.Right()));
+        move((step.Down()&step.Down()&step.Right()));
         step = new Point(point);
-        move((step.Left()&step.Left()&step.Left()&step.Up()));
+        move((step.Left()&step.Left()&step.Up()));
         step = new Point(point);
-        move((step.Left()&step.Left()&step.Left()&step.Down()));
+        move((step.Left()&step.Left()&step.Down()));
         step = new Point(point);
-        move((step.Right()&step.Right()&step.Right()&step.Up()));
+        move((step.Right()&step.Right()&&step.Up()));
         step = new Point(point);
-        move((step.Right()&step.Right()&step.Right()&step.Down()));
+        move((step.Right()&step.Right()&step.Down()));
     }
     public void CheckPoint(Point p){
         for (int i = 0; i < counter; i++) {
